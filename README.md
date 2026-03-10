@@ -180,8 +180,8 @@ Cada fase contém os artefatos produzidos durante o desenvolvimento, como:
 
 # Integrantes do Grupo
 
-- **Gabriel Medina Peres** — RA: 10426931  
-- **Marcelo Prass Cambé** — RA: 10438275  
+- **Gabriel Medina Peres** - RA: 10426931  
+- **Marcelo Prass Cambé** - RA: 10438275  
 
 **Turma:** 04G  
 
