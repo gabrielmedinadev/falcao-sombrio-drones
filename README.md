@@ -203,7 +203,7 @@ Cada fase contém os artefatos produzidos durante o desenvolvimento, como:
 | **Gabriel Medina Peres** | 10426931 |
 | **Marcelo Prass Cambé** | 10438275 |
 
-**Turma:** 04G
+**Turma:** 04G - Ciência da Computação
 
 ---
 
