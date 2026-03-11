@@ -211,5 +211,6 @@ Cada fase contém os artefatos produzidos durante o desenvolvimento, como:
 
 **Disciplina:** Projeto de Software  
 **Instituição:** Universidade Presbiteriana Mackenzie  
+**Professor:** Rodrigo Silva
 
 Este projeto possui **finalidade exclusivamente acadêmica** e foi desenvolvido como parte das atividades avaliativas da disciplina.
