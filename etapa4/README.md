@@ -24,7 +24,7 @@ Além disso, foram adicionadas restrições de integridade, como:
 
 ---
 
-## 📸 Evidências (Prints)
+##  Evidências
 
 - **Estrutura do Banco**  
   <img width="1910" height="343" alt="EstruturaBanco" src="https://github.com/user-attachments/assets/fd8bfa9b-c7f8-456f-910b-abf1d89b2f42" />
