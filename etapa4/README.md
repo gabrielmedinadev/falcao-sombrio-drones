@@ -6,7 +6,6 @@ Esta etapa mostra a integração entre o **modelo de classes UML** e o **modelo 
 
 ## 📌 Estrutura do Banco (SQLite)
 
-O script completo está no arquivo (arquivo do script)
 
 Ele cria as seguintes tabelas:
 
@@ -60,6 +59,3 @@ Além disso, foram adicionadas restrições de integridade, como:
   <img width="717" height="101" alt="Autenticacao" src="https://github.com/user-attachments/assets/356481ef-d44d-458a-87d6-4faa2baf8b4c" />
 
 ---
-
-✍️ **Conclusão:**  
-Com este mapeamento e a execução do script no SQLite, comprovamos que o **modelo de classes UML** foi corretamente integrado ao **modelo relacional**, garantindo a consistência entre o projeto conceitual e a implementação prática.
