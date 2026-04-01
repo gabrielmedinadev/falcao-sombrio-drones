@@ -6,4 +6,4 @@ Nesta etapa, foi elaborado o **diagrama de sequencia UML** do **Sistema Falcão 
 
 ## 📌 Diagrama de Sequencia
 
-![Diagrama de Sequencia](./Diagrama_Sequencia.jpeg)
+![Diagrama de Sequencia](./Diagrama_Sequencia.png)
