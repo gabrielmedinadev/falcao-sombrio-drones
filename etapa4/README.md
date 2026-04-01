@@ -10,13 +10,13 @@ O script completo está no arquivo (arquivo do script)
 
 Ele cria as seguintes tabelas:
 
-- **operadores**
-- **drones**
-- **missões**
-- **sensores**
-- **telemetria**
-- **logs de auditoria**
-- **autenticação**
+- **Operadores**
+- **Drones**
+- **Missões**
+- **Sensores**
+- **Telemetria**
+- **Logs de auditoria**
+- **Autenticação**
 
 Além disso, foram adicionadas restrições de integridade, como:
 - **CHECK** em atributos (ex.: status, perfil, bateria).  
