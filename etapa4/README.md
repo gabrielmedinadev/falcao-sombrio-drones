@@ -1,61 +1,32 @@
 # Etapa 4 – Integração de Modelos (Classes + Banco de Dados)
 
-Esta etapa mostra a integração entre o **modelo de classes UML** e o **modelo relacional no SQLite**.
+Esta etapa consolida a transição do **modelo de classes UML** para o **modelo relacional em nuvem**, utilizando o **Supabase (PostgreSQL)** como infraestrutura de persistência de dados.
 
 ---
 
-## 📌 Estrutura do Banco (SQLite)
+## 📌 Estrutura do Banco (Supabase / PostgreSQL)
 
+O banco de dados foi estruturado de forma a refletir 1:1 cada classe definida no diagrama UML anterior.
 
-Ele cria as seguintes tabelas:
-
-- **Operadores**
-- **Drones**
-- **Missões**
-- **Sensores**
-- **Telemetria**
-- **Logs de auditoria**
-- **Autenticação**
-
-Além disso, foram adicionadas restrições de integridade, como:
-- **CHECK** em atributos (ex.: status, perfil, bateria).  
-- **Chaves estrangeiras** respeitando os relacionamentos UML.  
-- **Índice único** para evitar missões sobrepostas no mesmo drone e horário.  
+### Tabelas Implementadas:
+- **Operadores:** Registro de usuários autorizados e seus níveis de acesso.
+- **Drones:** Gestão da frota, status operacional, níveis de bateria e versão de firmware.
+- **Missões:** Planejamento e histórico de execuções táticas.
+- **Sensores:** Abstração para componentes de hardware (Lidar, Camera, GPS) vinculados a cada drone.
+- **Telemetria:** Registro de alta frequência para localização, velocidade e status em tempo real.
+- **Logs de Auditoria:** Histórico imutável de eventos para conformidade e segurança.
+- **Autenticação:** Gestão de segurança biométrica e MFA (Multifator).
+- **Infraestrutura de Controle:** Gestão da redundância entre Servidores Principais e de Backup (**Failover**).
 
 ---
 
-##  Evidências
+## 🛡️ Restrições e Segurança
 
-- **Estrutura do Banco**  
-  <img width="1910" height="343" alt="EstruturaBanco" src="https://github.com/user-attachments/assets/fd8bfa9b-c7f8-456f-910b-abf1d89b2f42" />
+A integração com o **Supabase** permitiu a aplicação de restrições avançadas que elevam o nível de segurança do sistema:
 
-- **Operadores**  
-  <img width="712" height="124" alt="Operador" src="https://github.com/user-attachments/assets/17a90cc5-392a-4917-a9bc-7aea57b153bb" />
+1. **Row Level Security (RLS):** Implementação de políticas de segurança na tabela `logs_auditoria`, tornando os registros **imutáveis** (bloqueio total de `UPDATE` e `DELETE`).
+2. **Integridade Referencial:** Uso rigoroso de **Chaves Estrangeiras (FK)** com `ON DELETE CASCADE`, garantindo a consistência entre drones e seus respectivos sensores e telemetria.
+3. **Validações de Domínio (CHECK):** Atributos críticos como `nivel_bateria` (0-100), `status` e `perfil_acesso` possuem restrições nativas no banco para evitar dados inconsistentes.
 
-- **Drones**  
-  <img width="709" height="97" alt="Drones" src="https://github.com/user-attachments/assets/ae3d0dc4-1383-4e94-a9a7-863be04c6caf" />
+![database](./database.jpg)
 
-- **Missões**  
-  <img width="712" height="100" alt="Missao" src="https://github.com/user-attachments/assets/b189e2e0-3ca1-41ca-a192-99eccc835b66" />
-
-- **Sensores**
-
-  <img width="712" height="149" alt="Sensor" src="https://github.com/user-attachments/assets/64a2ec8c-f0fe-45c0-9a33-a0e788c1c2e5" />
-
-
-
-- **Telemetria**
-
-  <img width="714" height="116" alt="Tele" src="https://github.com/user-attachments/assets/ddc3c281-c211-442c-92cc-e5dc3ed02f94" />
-
-- **Logs de auditoria**
-
-
-  <img width="711" height="173" alt="LogAudi" src="https://github.com/user-attachments/assets/548535f6-80f0-4fd1-a4ac-b586b3871b9c" />
-
-
-- **Autenticação**
-
-  <img width="717" height="101" alt="Autenticacao" src="https://github.com/user-attachments/assets/356481ef-d44d-458a-87d6-4faa2baf8b4c" />
-
----
