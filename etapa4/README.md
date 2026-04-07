@@ -28,3 +28,5 @@ A integração com o **Supabase** permitiu a aplicação de restrições avança
 1. **Row Level Security (RLS):** Implementação de políticas de segurança na tabela `logs_auditoria`, tornando os registros **imutáveis** (bloqueio total de `UPDATE` e `DELETE`).
 2. **Integridade Referencial:** Uso rigoroso de **Chaves Estrangeiras (FK)** com `ON DELETE CASCADE`, garantindo a consistência entre drones e seus respectivos sensores e telemetria.
 3. **Validações de Domínio (CHECK):** Atributos críticos como `nivel_bateria` (0-100), `status` e `perfil_acesso` possuem restrições nativas no banco para evitar dados inconsistentes.
+
+Link DB: https://supabase.com/dashboard/project/akcthaxdeyrmboingwec/database/schemas
