@@ -105,7 +105,7 @@ Características:
 - Registro de eventos críticos  
 - Criptografia de dados  
 - Assinaturas digitais  
-- **Banco de dados NoSQL distribuído**
+- Banco de dados distribuído
 
 ---
 
