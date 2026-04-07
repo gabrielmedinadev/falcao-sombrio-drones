@@ -1,6 +1,6 @@
 # Etapa 4 – Integração de Modelos (Classes + Banco de Dados)
 
-Esta etapa consolida a transição do **modelo de classes UML** para o **modelo relacional em nuvem**, utilizando o **Supabase (PostgreSQL)** como infraestrutura de persistência de dados.
+Nesta etapa foi implementada a transição do **modelo de classes UML** para o **modelo relacional em nuvem**, utilizando o **Supabase (PostgreSQL)** como infraestrutura de persistência de dados.
 
 ---
 
