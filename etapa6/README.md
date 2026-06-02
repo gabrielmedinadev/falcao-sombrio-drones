@@ -6,6 +6,6 @@ Nesta etapa, foi elaborado a **Integração Sequência + Colaboração** do **Si
 
 ## 📌 Integração Sequência + Colaboração 
 
-![Diagrama de Colaboracao](./Diagrama_Colaboracao.jpg)
+![Diagrama de Colaboracao](./Diagrama_Colaboracao.jpeg)
 
 ---
