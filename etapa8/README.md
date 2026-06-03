@@ -1,4 +1,4 @@
-# Etapa 8 — Projeto Final: Código Java + Integração com Banco de Dados
+# Etapa 8 - Projeto Final: Código Java + Integração com Banco de Dados
 
 ---
 
