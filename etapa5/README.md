@@ -6,6 +6,6 @@ Nesta etapa, foi elaborado o **Diagrama de Projeto (com abstrações e interface
 
 ## 📌 Diagrama de Projeto
 
-![Diagrama de Projeto](./Diagrama_Projeto.jpg)
+![Diagrama de Projeto](./Diagrama_Projetoo.jpg)
 
 ---
